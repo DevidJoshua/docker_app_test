@@ -11,5 +11,5 @@ RUN npm install pm2 -g
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
-CMD ["pm2", "app.js"]
+CMD ["pm2","start","app.js"]
 EXPOSE 8080
