@@ -44,10 +44,10 @@ jobs:
             tags: ${{ steps.meta.outputs.tags }}
             labels: ${{ steps.meta.outputs.labels }}
 
-        - name: Run the image in a container
-          uses: addnab/docker-run-action@v3
-          with:
-            image: ${{ secrets.DOCKERHUB_USERNAME }}:latest
-            run: |
-              echo "runing the docker image"
-              echo "Testing the nodejs  app endpoints"
+        # - name: Run the image in a container
+        #   uses: addnab/docker-run-action@v3
+        #   with:
+        #     image: ${{ secrets.DOCKERHUB_USERNAME }}:latest
+        #     run: |
+        #       echo "runing the docker image"
+        #       echo "Testing the nodejs  app endpoints"
