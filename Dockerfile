@@ -1,6 +1,6 @@
 FROM node:16
 #create app directory
-WORKDIR /opt/app
+WORKDIR /opt/app/docker_app_test
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
